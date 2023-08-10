@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+      
+        <a href="#home" id="navbar__logo">Nivedita Verma</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="./main.html" class="button" id="contact">Contact Me!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h2 class="hero__heading">What describes <span>Me</span> ?</h2>
+        <div class="sub-container">
+          <h1>I'm <span class="auto-type"></span></h1>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="box">
+        <div class="profile_pic">
+          <img src=".\assets\Portfolio_picture.jpeg">
+        </div>
+        </div>
+        <div class="main__content">
+          <h1>Who am I?</h1>
+          <p class="main__content">I am a dedicated Computer Science student at Thapar University, Patiala, driven by a passion for exploring new horizons. My goal is to discover innovative solutions to everyday challenges by leveraging the knowledge and experiences I have acquired on my journey.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="projects" id="projects">
+      <h1>My Projects</h1>
+      <div class="projects__wrapper">
+        <div class="projects__card">
+          <h2>STMS</h2>
+          <p>This web app creates optimal timetables for
+            administrators, students, and teachers.
+            Technologies used: React, Node.js, MongoDB Atlas </p>
+          <div class="projects__btn"><button>Click here!</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Melanoma Classification</h2>
+          <p>This project focuses on the accurate classification of melanoma versus benign skin lesions.
+            Technologies used: Deep learning, python, PyTorch, TensorFlow.</p>
+          <div class="projects__btn"><button>Click here!</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Disk Scheduler</h2>
+          <p>A novel disk scheduling system utilizes vector-based calculations to optimize data access sequences. And translating these calculations into Python code for drawing a graph as a conclusion
+            </p>
+          <div class="projects__btn"><button>Click here!</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Paint app</h2>
+          <p>A basic paint app in OpenGL implementing the concepts of Computer Graphics</p>
+          <div class="projects__btn"><button>Click here!</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <!-- <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1></h1>
+          <h2>Sign Up Today</h2>
+          <p>Send in your feedback and concerns</p>
+          <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Nivedita Verma</a>
+          </div>
+          <p class="website__rights">© Nivedita Verma 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://github.com/NiveditaVerma" class="social__icon--link" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://instagram.com/nivedita_34?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/nivedita-verma-b7a6921bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX4pHpha6SEarw4gQLDwKbA%3D%3D" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:niveditaverma34@gmail.com" class="social__icon--link"
+              ><i class="fa fa-envelope" style="font-size:24px;color:white"></i></a>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed= new Typed(".auto-type",{
+          strings:["Innovative","Determined","Kind-hearted","Resilient"],
+          typeSpeed:100,
+          backSpeed:100,
+          loop:true,
+      })
+    </script>
+  </body>
+</html>
